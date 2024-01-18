@@ -1,10 +1,10 @@
 ##################################################
-# Brian Lesko  12/3/2023
+# Brian Lesko  1/17/2024
 # This code implements some some gui shortcuts that are used to customize the UI of the app.py file - using the low code streamlit library.
 
 import streamlit as st
 
-# Version 1.0.0
+# Version 1.0.1
 
 class gui:
     def __init__(self):
@@ -30,6 +30,18 @@ class gui:
                 "." #st.write("[![LinkedIn](https://raw.githubusercontent.com/BrianLesko/BrianLesko/f7be693250033b9d28c2224c9c1042bb6859bfe9/.socials/svg-335095-blue/yt-logo-blue.svg)](https://www.linkedin.com/in/brianlesko/)")
             with col6: # BLOG Visual Study Code
                 "." #"[![VSC]()](https://www.visualstudycode.com/)"
+            
+            st.write(" ")
+            "---"
+            st.write(" ")
+            col1, col2, col3 = st.columns([1,1,1], gap="medium")
+            with col2:
+                Sidebar = st.empty()
+            st.write(" ")
+            "---"
+            st.write(" ")
+        return Sidebar
+        
 
     def clean_format(self, wide=False):
         if wide == True: st.set_page_config(layout='wide')

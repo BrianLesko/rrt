@@ -1,10 +1,10 @@
 
-# Real Time plotting
-This code implements GUI plotting that is time optimized enough to accept a plot signal from a PS5 controller, the plot schema used here can be used for a real time data dashboard.This project is written in [Pure Python]() in under 100 lines of code. Created by Brian Lesko for Learning Purposes.
+# RRT
+This code implements Real Time RRT Tree search in a low code UI. This project is written in [Pure Python]() in under 50 lines of code. Created by Brian Lesko for Learning Purposes.
 
 &nbsp;
 
-<div align="center"><img src="docs/preview.png" width="800"></div>
+<div align="center"><img src="docs/preview.gif" width="800"></div>
 
 &nbsp;
 
@@ -14,8 +14,6 @@ This code uses the following libraries:
 - `streamlit`: for building the user interface.
 - `numpy`: for creating arrays.
 - `matplotlib`: for saving image data
-- `io`: for saving image data
-- `hidapi`: for accessing usb connections on the host device
 
 
 &nbsp;
@@ -35,10 +33,10 @@ This will start the local Streamlit server, and you can access the chatbot by op
 ## How it Works
 
 The app as follows:
-1. The hidapi library is used to initiate a connection to the PS5 controller
-2. The dualsense class is used to decode the received bytes
-3. The robot class is used for some support plotting methods
-4. Streamlit is used to display the plot in real time
+1. 
+2. 
+3. 
+4. 
 
 &nbsp;
 
@@ -47,7 +45,6 @@ The app as follows:
 repository/
 ├── app.py # the code and UI integrated together live here
 ├── customize_gui # class for adding gui elements
-├── dualsense.py # The class used to decode received bytes from the wired controller
 ├── requirements.txt # the python packages needed to run locally
 ├── .gitignore # includes the local virtual environment named my_env
 ├── .streamlit/

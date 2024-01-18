@@ -32,7 +32,7 @@ class two2_robot:
         self.th = CyclicVariable(self.thetas)
 
     @staticmethod
-    def get_colored_plt(hex = '#FFFFFF', hex2 = '#D6D6D6', hex3 = '#D6D6D6',figsize=(6, 6)):
+    def get_colored_plt(hex = "#F6F6F3", hex2 = '#D6D6D6', hex3 = '#D6D6D6',figsize=(6, 6)):
             # hex1 is the background color   # hex2 is the text color    # hex3 is the secondary color
             fig, ax = plt.subplots(figsize=figsize)
             ax.set_facecolor(hex)  
